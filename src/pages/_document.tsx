@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <Main />
+        <Main /> {/* App이 여기 들어옴 */}
         <NextScript />
       </body>
     </Html>
