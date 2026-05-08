@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function SalesItem({ id, productName, description, price, photo }: SaleData) {
-  const imgUrl = `https://styangpa.blob.core.windows.net/yangpa/${photo}`;
+  const imgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/${photo}`;
 
   return (
     <Link href={`/sales/${id}`} className={style.container}>
